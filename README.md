@@ -2,6 +2,9 @@
 
 Weather by Coco is a simple React app that displays basic weather information for a city.
 
+![image](https://github.com/lee43karen/Weather-by-Coco/assets/43963227/278cfb5c-6866-4a33-89e9-7fd9122b31aa)
+
+
 ## Features
 
 - Search for a location by city name or zip code
