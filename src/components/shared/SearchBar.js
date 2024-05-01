@@ -64,8 +64,12 @@ export default function SearchBar({ onSelectOption = () => {} }) {
     navigator.geolocation.getCurrentPosition((position) => {
       const p = position.coords;
       if (p) {
-        document.getElementById("search-bar").focus()
-        setInput(`${p.latitude}, ${p.longitude}`)
+        const element = document.getElementById("search-bar")
+        const coords = `${p.latitude}, ${p.longitude}`
+        if (element) {
+          element.focus()
+        }
+        setInput(coords)
       }
     });
   }
@@ -77,6 +81,7 @@ export default function SearchBar({ onSelectOption = () => {} }) {
         className="w-full"
         options={options}
         open={open}
+        inputValue={input}
         getOptionLabel={(result) =>
           formatCity(result.name, result.state, result.country)
         }
@@ -88,7 +93,6 @@ export default function SearchBar({ onSelectOption = () => {} }) {
         onChange={(_, selected) => {
           onSelectOption(selected);
           setOpen(false);
-          setInput("");
         }}
         onInputChange={onInputChange}
         onOpen={() => {
