@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "@mui/material";
+import Home from "./pages/Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen h-full bg-gradient-to-b from-sky-200 to-indigo-200 py-16">
+      <main >
+        <Container>
+          <Home />
+        </Container>
+      </main>
     </div>
   );
 }
-
-export default App;
