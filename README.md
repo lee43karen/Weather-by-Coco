@@ -27,3 +27,4 @@ Weather by Coco is a simple React app that displays basic weather information fo
 - Imperial vs. metric conversions, language settings
 - Store weather icons in `src/assets`
 - Dark/light mode
+- Robust code documentation
