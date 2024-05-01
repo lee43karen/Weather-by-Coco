@@ -16,7 +16,11 @@ Weather by Coco is a simple React app that displays basic weather information fo
 - Install `Node.js` and `npm` on your system.
 - Clone the repository.
 - Get an API key from [OpenWeatherMap](https://openweathermap.org/api) and subscribe to their free [One Call API](https://openweathermap.org/api/one-call-3).
-- Navigate to `src/api/Keys.js` and assign your API key to `WEATHER_KEY`.
+- Navigate to `src/api` and create a file called `Keys.js`
+- Add the following line into `Keys.js` replacing `YOUR_API_KEY` with your OpenWeatherMap API key:
+```
+export const WEATHER_KEY = "YOUR_API_KEY"
+```
 - Install the packages using `npm install`, and run the application using `npm start`.
 
 ## Future Improvements
